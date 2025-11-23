@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>にゃるるとの思い出展 |お知らせ</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #abfcff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+            color: #444;
+        }
+
+        /* お知らせ一覧 */
+        .news-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* お知らせカード */
+        .news-card {
+            background: #ffffff;
+            padding: 20px;
+            width: 30%;
+            min-width: 250px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: 0.2s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        .news-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .news-date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .news-text {
+            line-height: 1.6;
+        }
+
+        /* スマホ対応 */
+        @media (max-width: 768px) {
+            .news-card {
+                width: 100%;
+            }
+        }
+
+                .top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+    </style>
+</head>
+
+<body style="font-family: var(--font-main);">
+    <h1>お知らせ</h1>
+
+    <div class="news-container">
+
+        <div class="news-card">
+            <div class="news-title">サーバーメンテナンス開始</div>
+            <div class="news-date">2025/11/14</div>
+            <div class="news-text">
+                3日間のサーバーメンテナンスを行います。期間中はサイトが利用できない場合があります。
+            </div>
+        </div>
+
+        <div class="news-card">
+            <div class="news-title">デザイン調整中</div>
+            <div class="news-date">2025/11/14</div>
+            <div class="news-text">
+                全体デザインを柔らかい雰囲気に変更予定です。
+            </div>
+        </div>
+
+        <div class="news-card">
+            <div class="news-title">お知らせページの追加</div>
+            <div class="news-date">2025/11/14</div>
+            <div class="news-text">
+                お知らせ専用ページを新しく追加しました。
+            </div>
+        </div>
+
+                <div class="news-card">
+            <div class="news-title">メンテナンス延長のお知らせ</div>
+            <div class="news-date">2025/11/16</div>
+            <div class="news-text">
+                メンテナンス時間が三日では足りないため、さらに二日延長します。
+            </div>
+        </div>
+
+                <div class="news-card">
+            <div class="news-title">メンテナンス終了のお知らせ</div>
+            <div class="news-date">2025/11/17</div>
+            <div class="news-text">
+                サーバーメンテナンスが無事終了しました。ご協力ありがとうございました。
+            </div>
+        </div>
+
+                <div class="news-card">
+            <div class="news-title">展示物追加のお知らせ</div>
+            <div class="news-date">2025/11/19</div>
+            今まで何も展示してなかったSplatoonエリアに写真を追加しました<br>
+            これでもまだ一部なので今後の追加をお楽しみに！
+            <div class="news-text">   
+            </div>
+        </div>
+
+                <div class="news-card">
+            <div class="news-title">不具合修正</div>
+            <div class="news-date">2025/11/17</div>
+            <div class="news-text">
+                Splatoonエリアの文字が左側に寄ってしまう不具合を修正しました。<br>
+                ぜひもう一度ご覧にいってはどうでしょうか？
+                <a href="/nyaru2_ru/Splatoon/">スプラトゥーンエリア</a>
+            </div>
+        </div>
+
+    </div>
+
+        <div class="top-right">
+            <a href="/">ホーム</a>
+        </div>
+
+</body>
+</html>

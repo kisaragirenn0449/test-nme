@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>にゃるるとの思い出展 | オーバーウォッチ２編</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left">
+    <h1>にゃるるとの思い出展 | オーバーウォッチ２編</h1>
+  </div>
+  <div class="header-right">
+    <a href="/" class="header-link">ホーム</a>
+    <a href="/nyaru2_ru/" class="header-link">about｜瑠羽にゃるる</a>
+    <a href="/nyaru2_ru/Splatoon/" class="header-link">スプラトゥーン編</a>
+    <a href="/nyaru2_ru/other/" class="header-link">その他</a>
+  </div>
+</header>
+
+<div class="gallery">
+  <!-- ここにある item の並びは元のまま -->
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2_1.jpg" onclick="openModal(this)">
+    <p>ゴールデンジュノ</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (37).jpg" onclick="openModal(this)">
+    <p>キリコの別スキンをお披露目</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (38).jpg" onclick="openModal(this)">
+    <p>壁激突にゃるる</p>
+  </div>
+
+  <!-- 以下あなたの元コードの item をそのまま並べる -->
+  <!-- コピペしたので省略しないで全部残ってます -->
+  
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (39).jpg" onclick="openModal(this)">
+    <p>壁激突にゃるるpart2</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (40).jpg" onclick="openModal(this)">
+    <p>開始前の盗撮</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (41).jpg" onclick="openModal(this)">
+    <p>ペルソナコラボジョーカー！？</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (42).jpg" onclick="openModal(this)">
+    <p>エモートに興味津々</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (43).jpg" onclick="openModal(this)">
+    <p>ゴルフボールみたい</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (44).jpg" onclick="openModal(this)">
+    <p>ペイロードに乗るにゃるる</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (1).jpg" onclick="openModal(this)">
+    <p>OWで釣り大会！？ 全員優勝！</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (60).jpg" onclick="openModal(this)">
+    <p>OWでもにゃるコマ</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (61).jpg" onclick="openModal(this)">
+    <p>OWでもにゃるコマpart2</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (62).jpg" onclick="openModal(this)">
+    <p>参加型中にピアニスト登場</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (63).jpg" onclick="openModal(this)">
+    <p>すみっこにゃるる</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (64).jpg" onclick="openModal(this)">
+    <p>正座にゃるる</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (65).jpg" onclick="openModal(this)">
+    <p>壁激突にゃるる再び</p>
+  </div>
+
+  <div class="item">
+    <img src="/nyaru2_ru/OW2/img/OW2 (67).jpg" onclick="openModal(this)">
+    <p>にゃるコマキリコ</p>
+  </div>
+</div>
+
+<!-- モーダル -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modalImg" class="modal-content">
+</div>
+
+<script>
+  function openModal(img) {
+    document.getElementById("imageModal").style.display = "flex";
+    document.getElementById("modalImg").src = img.src;
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+
+</body>
+</html>

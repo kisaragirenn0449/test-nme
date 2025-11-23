@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>にゃるるとの思い出展 |オーバーウォッチ２編</title>
+  <style>
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background-color: #abfcff;
+    }
+
+      h1 {
+        position: relative;
+        display: inline-block;
+        font-size: 36px;
+        color: #333;
+        z-index: 1;
+      }
+
+      h1::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0.1em;
+        width: 100%;
+        height: 0.5em;
+        z-index: -1;
+        border-radius: 4px;
+      }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 0 auto;
+      display: block;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .item {
+      width: 300px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    p {
+        font-size: 20px;
+        text-align: center;
+      }
+
+    /* ===== モーダル設定 ===== */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #ccc;
+    }
+
+
+  .header {
+    display: flex;
+    justify-content: space-between; /* 左寄せにする */
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .header-left {
+    font-size: 20px;
+  }
+
+  .header-right {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+  }
+
+  .header-link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #0000EE;
+  }
+
+  .header-link:hover {
+    color: #002fff;
+  }
+
+  .header-left h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  </style>
+</head>
+<body>
+      <header class="header">
+        <div class="header-left">
+          <h1>にゃるるとの思い出展 |オーバーウォッチ２編</h1>
+        </div>
+        <div class="header-right">
+          <a href="/" class="header-link">ホーム</a>
+          <a href="/nyaru2_ru/" class="header-link">adout |瑠羽にゃるるについて</a>
+          <a href="/nyaru2_ru/Splatoon/" class="header-link">スプラトゥーン編</a>
+          <a href="/nyaru2_ru/other/" class="header-link">その他</a>
+        </div>
+      </header>
+  <p>にゃるるとの思い出展記念すべき一枚目</p>
+  <div class="gallery">
+    <div class="item">
+      <img src="/nyaru2_ru/OW2/img/OW2_1.jpg" alt="OW2" onclick="openModal(this)">
+      <p>OW2参加型の時のスクショ</p>
+    </div>
+  </div>
+
+    <div class="gallery">
+    <div class="item">
+      <img src="/nyaru2_ru/OW2/img/OW2(37).jpg" alt="OW2" onclick="openModal(this)">
+      <p>キリコの別スキンをお披露目したいにゃるる</p>
+    </div>
+  </div>
+
+  <!-- モーダル -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <script>
+    function openModal(img) {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImg");
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+</body>
+</html>

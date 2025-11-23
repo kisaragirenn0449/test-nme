@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>にゃるるとの思い出展 |その他</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <h1>にゃるるとの思い出展 |その他</h1>
+    </div>
+    <div class="header-right">
+      <a href="/" class="header-link">ホーム</a>
+      <a href="/nyaru2_ru/" class="header-link">adout |瑠羽にゃるるについて</a>
+      <a href="/nyaru2_ru/OW2/" class="header-link">オーバーウォッチ２編</a>
+      <a href="/nyaru2_ru/Splatoon/" class="header-link">スプラトゥーン編</a>
+    </div>
+  </header>
+
+<div class="item">
+  <a href="/nyaru2_ru/other/debut">
+    <img src="/nyaru2_ru/other/img/img_1.png" alt="LIVE2Dデビュー">
+  </a>
+  <p>準備中</p>
+</div>
+
+
+  <!-- モーダル -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <script>
+    function openModal(img) {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImg");
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+</body>
+</html>

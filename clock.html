@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>今日の日付</title>
+
+
+  <style>
+    body {
+      background-color: #00ff0d;
+    }
+
+    p {
+      font-size: 30px;
+      color: #ffb52d;
+    }
+    </style>
+</head>
+<body style="font-family: var(--font-main);">
+  <p><span id="today"></span></p>
+
+  <script>
+    const weekDays = ["日", "月", "火", "水", "木", "金", "土"];
+
+    function updateDateTime() {
+      const now = new Date();
+      const year = now.getFullYear();
+      const month = now.getMonth() + 1;
+      const date = now.getDate();
+      const day = weekDays[now.getDay()];
+      const hour = now.getHours();
+      const minute = now.getMinutes().toString().padStart(2, "0");
+      const second = now.getSeconds().toString().padStart(2, "0");
+
+    const displayText = `${year}/${month}/${date}/${day}/${hour}:${minute}:${second}`;
+
+    document.getElementById("today").textContent = displayText;
+    }
+
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+</body>
+</html>

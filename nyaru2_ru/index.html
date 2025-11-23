@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8">
+    <title>にゃるるとの思い出展 |にゃるるについて</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+      <header class="header">
+        <div class="header-left">
+          <h1>にゃるるとの思い出展 | にゃるるについて</h1>
+        </div>
+        <div class="header-right">
+          <a href="/" class="header-link">ホーム</a>
+          <a href="/nyaru2_ru/OW2/" class="header-link">オーバーウォッチ２編</a>
+          <a href="/nyaru2_ru/Splatoon/" class="header-link">スプラトゥーン編</a>
+          <a href="/nyaru2_ru/other/" class="header-link">その他</a>
+        </div>
+      </header>
+      <h2>瑠羽にゃるるとは？</h2>
+      <p class="center-text">瑠羽にゃるるは、現在準備中のVtuber配信者でTwitchで配信しています</p><br>
+      <h2>主な配信内容</h2>
+      <p class="center-text">OW2、スプラトゥーン3の参加型。</p>
+      <p class="center-text">最近ではR.E.P.O.、雀魂の配信もしています。</p><br>
+      <h2>プロフィール写真</h2>
+      <div class="gallery">
+        <div class="item">
+          <img src="/nyaru2_ru/img/profile.png" alt="にゃるるのプロフィール" onclick="openModal(this)">
+          <p>配信時のスクショの利用</p>
+        </div>
+      </div><br>
+      <h2>にゃるるについて</h2>
+      <div class="text-box">
+      <p>​瑠羽 にゃるる(ru nyaruru)</p>
+      <p>■誕生日：7月3日</p>
+
+      <p>■身長：153cm</p>
+
+      <p>■体重：マカロン22個分</p>
+
+      <p>■足のサイズ：22cm</p>
+
+      <p>■好きなもの：猫、アニメ​、ゲーム</p>
+
+      <p>■Twitch初配信日：2025年4月26日</p><br>
+      <p>参照:<a href="https://nyaru2ru.wixsite.com/mysite/">にゃるるの公式サイト</a></p>
+      </div>
+
+      <div class="wrapper">
+        <div class="card">
+          <h1>にゃるるの活動歴史（Twitch）</h1>
+          <h2>Comming soon</h2>
+          <p>情報収集中...</p>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <h2>リンク集</h2>
+      <p class="center-text"><a href="https://nyaru2ru.wixsite.com/mysite/">にゃるるの公式サイト</a></p>
+      <p class="center-text"><a href="https://x.com/nyaru2_ru">にゃるるのX(旧Twitter)</a></p>
+      <p class="center-text"><a href="https://www.twitch.tv/nyaru2_ru">にゃるるのTwitch</a></p>
+      <p class="center-text"><a href="https://www.youtube.com/@nyaru2_ru">にゃるるのYouTubeチャンネル</a></p>
+      <p class="center-text"><a href="https://www.amazon.co.jp/hz/wishlist/ls/1VME9DZ97O7WA?ref_=wl_share">Amazon</a></p>
+
+
+
+        <!-- モーダル -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <script>
+    function openModal(img) {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImg");
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+    </body>
+</html>

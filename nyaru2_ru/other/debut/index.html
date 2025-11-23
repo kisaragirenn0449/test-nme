@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>にゃるるとの思い出展 | LIVE2Dデビュー</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left">
+    <h1>にゃるるとの思い出展 | LIVE2Dデビュー</h1>
+  </div>
+  <div class="header-right">
+    <a href="/" class="header-link">ホーム</a>
+    <a href="/nyaru2_ru/" class="header-link">about｜瑠羽にゃるる</a>
+    <a href="/nyaru2_ru/Splatoon/" class="header-link">スプラトゥーン編</a>
+    <a href="/nyaru2_ru/other/" class="header-link">その他</a>
+  </div>
+</header>
+
+    <div class="gallery">
+      <div class="item">
+    <img src="/nyaru2_ru/other/debut/img/img_1.png" onclick="openModal(this)">
+    </div>
+
+      <div class="item">
+    <img src="/nyaru2_ru/other/debut/img/img_2.png" onclick="openModal(this)">
+    </div>
+
+      <div class="item">
+    <img src="/nyaru2_ru/other/debut/img/img_3.png" onclick="openModal(this)">
+    </div>
+
+      <div class="item">
+    <img src="/nyaru2_ru/other/debut/img/img_4.png" onclick="openModal(this)">
+    </div>
+
+      <div class="item">
+    <img src="/nyaru2_ru/other/debut/img/img_5.png" onclick="openModal(this)">
+    </div>
+
+      <div class="item">
+    <img src="/nyaru2_ru/other/debut/img/img_6.png" onclick="openModal(this)">
+    </div>
+
+    </div>
+
+
+<!-- モーダル -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modalImg" class="modal-content">
+</div>
+
+<script>
+  function openModal(img) {
+    document.getElementById("imageModal").style.display = "flex";
+    document.getElementById("modalImg").src = img.src;
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
